@@ -34,14 +34,16 @@
         Mitglieder
       </div>
       <div class="list">
-        <a href="https://github.com/niccokunzmann">
+      {% for member in site.data.members %}
+        <a href="{{ member.link }}">
           <div class="mitglied">
-            <img class="image" src="https://avatars2.githubusercontent.com/u/564768?v=3&s=460"  />
+            <img class="image" src="{{ member.image }}"  />
             <div class="name">
-              Nicco Kunzmann
+              {{ member.name }}
             </div>
           </div>
         </a>
+      {% endfor %}
       </div>
     </div>
     <div class="section">
