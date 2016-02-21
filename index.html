@@ -31,24 +31,24 @@
    <div class="content">
     <div class="section">
       <div class="heading">
-        Mitglieder
-      </div>
-      <div class="list">
-      {% for member in site.data.members %}
-        <a href="{{ member.link }}">
-          <div class="mitglied">
-            <img class="image" src="{{ member.image }}"  />
-            <div class="name">
-              {{ member.name }}
-            </div>
-          </div>
-        </a>
-      {% endfor %}
+        Projekte
       </div>
     </div>
     <div class="section">
       <div class="heading">
-        Projekte
+        Mitglieder
+      </div>
+      <div class="list">
+      {% for member in site.data.members %}
+        <a href="{{ member.link|e }}">
+          <div class="mitglied">
+            <img class="image" src="{{ member.image|e }}"  />
+            <div class="name">
+              {{ member.name|e }}
+            </div>
+          </div>
+        </a>
+      {% endfor %}
       </div>
     </div>
    </div>
