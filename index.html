@@ -36,7 +36,60 @@
           Projekte
         </div>
       </a>
+      <div class="list">
       {% for project in site.data.projects %}
+        <div class="project">
+          <svg width="600" height="480" viewBox="1 0 1 0.8">
+            <g>
+            {% for image in project.images %}
+              <image xlink:href="{{ image|e }}"
+                     x="{{ forloop.index }}"
+                     preserveAspectRatio="none"
+                     y="0"
+                     width="1"
+                     height="0.8" />
+              <animateTransform attributeName="transform"
+                                attributeType="XML"
+                                type="translate"
+                                from="-{{ forloop.index0 }}" 
+                                to="-{{ forloop.index }}" 
+                                dur="1s" 
+                                begin="a{{ forloop.index0 }} + 5s" 
+                                fill="freeze" 
+                                d="a{{ forloop.index }}" />
+              {% if forloop.last %}
+              <image xlink:href="{{ image|e }}"
+                     x="-1"
+                     preserveAspectRatio="none"
+                     y="0"
+                     width="1"
+                     height="0.8" />
+              <animateTransform attributeName="transform"
+                                attributeType="XML"
+                                type="translate"
+                                from="1" 
+                                to="-{{ forloop.index }}" 
+                                dur="1s" 
+                                begin="5s"
+                                fill="freeze"
+                                d="a0" />
+              {% endif %}
+            {% endfor %}
+            </g>
+          </svg>
+          <a href="{{ project.url|e }}">
+            <div class="overlay">
+              <div class="title">
+                {{ project.title|e }}
+              </div>
+              <div class="description">
+                {{ project.description|e }}
+              </div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+      </div>
     </div>
     <div class="section">
       <a class="anchor" name="Mitglieder"></a>
