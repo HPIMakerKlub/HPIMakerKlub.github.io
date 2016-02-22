@@ -30,14 +30,21 @@
    </div>
    <div class="content">
     <div class="section">
-      <div class="heading">
-        Projekte
-      </div>
+      <a class="anchor" name="Projekte"></a>
+      <a href="#Projekte" name="Projekte">
+        <div class="heading">
+          Projekte
+        </div>
+      </a>
+      {% for project in site.data.projects %}
     </div>
     <div class="section">
-      <div class="heading">
-        Mitglieder
-      </div>
+      <a class="anchor" name="Mitglieder"></a>
+      <a href="#Mitglieder">
+        <div class="heading">
+          Mitglieder
+        </div>
+      </a>
       <div class="list">
       {% for member in site.data.members %}
         <a href="{{ member.link|e }}">

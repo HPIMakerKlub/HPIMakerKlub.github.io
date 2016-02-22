@@ -60,6 +60,13 @@ body {
   color: white;
 }
 
+.anchor {
+  top: -120px;
+  position: relative;
+  visibility: hidden;
+  display: block;
+}
+
 .mitglied {
   margin: 10px;
   display: inline-block;
