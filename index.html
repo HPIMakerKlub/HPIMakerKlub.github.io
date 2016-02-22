@@ -39,33 +39,33 @@
       <div class="list">
       {% for project in site.data.projects %}
         <div class="project">
-          <svg width="600" height="480" viewBox="1 0 1 0.8">
+          <svg width="600" height="480" viewBox="1 0 1 0.8" class="animated-background">
             <g>
             {% assign duration = 6 %}
-            {% assign values = "1" %}
+            {% assign values = "0" %}
             {% assign keyTimes = "0" %}
             {% for image in project.images %}
               {% assign duration = duration | plus:6 %}
-              {% capture values %}{{ values }}; -{{ forloop.index0 }}{% endcapture %}
-              {% capture keyTimes %}{{ keyTimes }}; {{ forloop.index | divided_by:forloop.length }}.{{ forloop.index | times:10 | divided_by:forloop.length | modulo:10 }}{{ forloop.index | times:100 | divided_by:forloop.length | modulo:10 }}{% endcapture %}
+              {% capture values %}{{ values }}; -{{ forloop.index }}; -{{ forloop.index }}{% endcapture %}
+              {% capture keyTimes %}{{ keyTimes }}; 0.{{ forloop.index0 | times:60 | plus:10 | divided_by:forloop.length | divided_by:6 | module:10 }}{{ forloop.index0 | times:600 | plus:100 | divided_by:forloop.length | divided_by:6 | modulo:10 }}; {{ forloop.index | divided_by:forloop.length }}.{{ forloop.index | times:10 | divided_by:forloop.length | modulo:10 }}{{ forloop.index | times:100 | divided_by:forloop.length | modulo:10 }}{% endcapture %}
               <image xlink:href="{{ image|e }}"
                      x="{{ forloop.index }}"
                      preserveAspectRatio="none"
                      y="0"
                      width="1"
                      height="0.8" />
-              {% if forloop.last %}
+              {% if forloop.first %}
               <image xlink:href="{{ image|e }}"
-                     x="0"
+                     x="{{ forloop.length | plus:1 }}"
                      preserveAspectRatio="none"
                      y="0"
                      width="1"
                      height="0.8" />
+              {% endif %}
+              {% if forloop.last %}
               <animateTransform attributeName="transform"
                                 attributeType="XML"
                                 type="translate"
-                                from="1" 
-                                to="-{{ forloop.index }}"
                                 values="{{ values }}"
                                 keyTimes="{{ keyTimes }}"
                                 begin="0s" 
