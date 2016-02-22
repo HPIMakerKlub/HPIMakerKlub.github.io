@@ -6,3 +6,12 @@
   - ledtable/LEDTable3.jpg
   - ledtable/LEDTable4.jpg
   url: https://github.com/niccokunzmann/ledtable
+
+- title: Bandraum-klingel
+  description: Durch Lichtsignale erkennt man, wenn andere vor der Tür stehen.
+  images: 
+  - hpibandraumklingel/1.jpg
+  - hpibandraumklingel/2.jpg
+  - hpibandraumklingel/3.jpg
+  - hpibandraumklingel/4.jpg
+  url: https://github.com/hpibandraum/ring
