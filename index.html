@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/index.css" media="screen">
   </head>
   <body>
+    <a class="anchor" name=""></a>
     <div class="header">
       <div class="logo tab">
         <a href="/">
@@ -27,90 +28,113 @@
               <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
             </svg>
             <style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style></a>
-   </div>
-   <div class="content">
-    <div class="section">
-      <a class="anchor" name="Projekte"></a>
-      <a href="#Projekte" name="Projekte">
-        <div class="heading">
-          Projekte
-        </div>
-      </a>
-      <div class="list">
-      {% for project in site.data.projects %}
-        <div class="project">
-          <svg width="600" height="480" viewBox="1 0 1 0.8" class="animated-background">
-            <g>
-            {% assign duration = 6 %}
-            {% assign values = "0" %}
-            {% assign keyTimes = "0" %}
-            {% for image in project.images %}
-              {% assign duration = duration | plus:6 %}
-              {% capture values %}{{ values }}; -{{ forloop.index }}; -{{ forloop.index }}{% endcapture %}
-              {% capture keyTimes %}{{ keyTimes }}; 0.{{ forloop.index0 | times:60 | plus:10 | divided_by:forloop.length | divided_by:6 | module:10 }}{{ forloop.index0 | times:600 | plus:100 | divided_by:forloop.length | divided_by:6 | modulo:10 }}; {{ forloop.index | divided_by:forloop.length }}.{{ forloop.index | times:10 | divided_by:forloop.length | modulo:10 }}{{ forloop.index | times:100 | divided_by:forloop.length | modulo:10 }}{% endcapture %}
-              <image xlink:href="{{ image|e }}"
-                     x="{{ forloop.index }}"
-                     preserveAspectRatio="none"
-                     y="0"
-                     width="1"
-                     height="0.8" />
-              {% if forloop.first %}
-              <image xlink:href="{{ image|e }}"
-                     x="{{ forloop.length | plus:1 }}"
-                     preserveAspectRatio="none"
-                     y="0"
-                     width="1"
-                     height="0.8" />
-              {% endif %}
-              {% if forloop.last %}
-              <animateTransform attributeName="transform"
-                                attributeType="XML"
-                                type="translate"
-                                values="{{ values }}"
-                                keyTimes="{{ keyTimes }}"
-                                begin="0s" 
-                                fill="freeze" 
-                                repeat="indefinetly" 
-                                repeatCount="indefinite"
-                                dur="{{ duration }}s" />
-              {% endif %}
-            {% endfor %}
-            </g>
-          </svg>
-          <a href="{{ project.url|e }}">
-            <div class="overlay">
-              <div class="title">
-                {{ project.title|e }}
+    </div>
+    <div class="content">
+      <div class="section">
+        <a class="anchor" name="Projekte"></a>
+        <a href="#Projekte" name="Projekte">
+          <div class="heading">
+            Projekte
+          </div>
+        </a>
+        <div class="list">
+        {% for project in site.data.projects %}
+          <div class="project">
+            <svg width="600" height="480" viewBox="1 0 1 0.8" class="animated-background">
+              <g>
+              {% assign duration = 6 %}
+              {% assign values = "0" %}
+              {% assign keyTimes = "0" %}
+              {% for image in project.images %}
+                {% assign duration = duration | plus:6 %}
+                {% capture values %}{{ values }}; -{{ forloop.index }}; -{{ forloop.index }}{% endcapture %}
+                {% capture keyTimes %}{{ keyTimes }}; 0.{{ forloop.index0 | times:60 | plus:10 | divided_by:forloop.length | divided_by:6 | module:10 }}{{ forloop.index0 | times:600 | plus:100 | divided_by:forloop.length | divided_by:6 | modulo:10 }}; {{ forloop.index | divided_by:forloop.length }}.{{ forloop.index | times:10 | divided_by:forloop.length | modulo:10 }}{{ forloop.index | times:100 | divided_by:forloop.length | modulo:10 }}{% endcapture %}
+                <image xlink:href="{{ image|e }}"
+                       x="{{ forloop.index }}"
+                       preserveAspectRatio="none"
+                       y="0"
+                       width="1"
+                       height="0.8" />
+                {% if forloop.first %}
+                <image xlink:href="{{ image|e }}"
+                       x="{{ forloop.length | plus:1 }}"
+                       preserveAspectRatio="none"
+                       y="0"
+                       width="1"
+                       height="0.8" />
+                {% endif %}
+                {% if forloop.last %}
+                <animateTransform attributeName="transform"
+                                  attributeType="XML"
+                                  type="translate"
+                                  values="{{ values }}"
+                                  keyTimes="{{ keyTimes }}"
+                                  begin="0s" 
+                                  fill="freeze" 
+                                  repeat="indefinetly" 
+                                  repeatCount="indefinite"
+                                  dur="{{ duration }}s" />
+                {% endif %}
+              {% endfor %}
+              </g>
+            </svg>
+            <a href="{{ project.url|e }}">
+              <div class="overlay">
+                <div class="title">
+                  {{ project.title|e }}
+                </div>
+                <div class="description">
+                  {{ project.description|e }}
+                </div>
               </div>
-              <div class="description">
-                {{ project.description|e }}
+            </a>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+      <div class="section">
+        <a class="anchor" name="Mitglieder"></a>
+        <a href="#Mitglieder">
+          <div class="heading">
+            Mitglieder
+          </div>
+        </a>
+        <div class="list">
+        {% for member in site.data.members %}
+          <a href="{{ member.link|e }}">
+            <div class="mitglied">
+              <img class="image" src="{{ member.image|e }}"  />
+              <div class="name">
+                {{ member.name|e }}
               </div>
             </div>
           </a>
+        {% endfor %}
         </div>
-      {% endfor %}
       </div>
-    </div>
-    <div class="section">
-      <a class="anchor" name="Mitglieder"></a>
-      <a href="#Mitglieder">
-        <div class="heading">
-          Mitglieder
-        </div>
-      </a>
-      <div class="list">
-      {% for member in site.data.members %}
-        <a href="{{ member.link|e }}">
-          <div class="mitglied">
-            <img class="image" src="{{ member.image|e }}"  />
-            <div class="name">
-              {{ member.name|e }}
-            </div>
+      <div class="section">
+        <a class="anchor" name="Kontakt"></a>
+        <a href="#Kontakt">
+          <div class="heading">
+            Kontakt
           </div>
         </a>
-      {% endfor %}
+        <a href="http://www.openstreetmap.org/#map=19/52.39207/13.12419&layers=N">
+          <img src="images/map.svg" class="map" />
+        </a>
+        <div class="address">
+          Hasso-Plattner-Institut, Haus D<br/>
+          August-Bebel-Str. 88<br/>
+          14482 Potsdam
+        </div>
       </div>
     </div>
-   </div>
+    <div class="footer">
+      <div class="logo">
+        <a href="/">
+          <img class="image" src="logo/HPIMakerKlubLogo.svg" />
+        </a>
+      </div>
+    </div>
   </body>
 </html>

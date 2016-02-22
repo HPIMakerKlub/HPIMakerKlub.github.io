@@ -36,6 +36,8 @@ a {
 body {
   font-family: 'Ubuntu', sans-serif;
   padding-top: 60px; /* header */
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .content {
@@ -49,7 +51,9 @@ body {
 
 .section {
   margin-bottom: 30px;
-  width: 100%;
+  width: auto;
+  left: 0px;
+  right: 0px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -119,4 +123,16 @@ body {
   font-size: 30px;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.map {
+  width: 100%;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer .logo .image {
+  height: 60px;
 }
