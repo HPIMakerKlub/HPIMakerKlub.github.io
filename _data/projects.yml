@@ -1,8 +1,8 @@
 - title: LED-Table
   description: Auf LED-Tischen kann man Spiele spielen, Bilder anzeigen und Programmieren lernen.
   images: 
-  - images/LEDTable1.jpg
-  - images/LEDTable2.jpg
-  - images/LEDTable3.jpg
-  - images/LEDTable4.jpg
+  - ledtable/LEDTable1.jpg
+  - ledtable/LEDTable2.jpg
+  - ledtable/LEDTable3.jpg
+  - ledtable/LEDTable4.jpg
   url: https://github.com/niccokunzmann/ledtable
