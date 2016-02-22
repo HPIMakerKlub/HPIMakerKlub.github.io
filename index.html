@@ -42,7 +42,7 @@
           <div class="project">
             <svg width="600" height="480" viewBox="1 0 1 0.8" class="animated-background">
               <g>
-              {% assign duration = 6 %}
+              {% assign duration = 0 %}
               {% assign values = "0" %}
               {% assign keyTimes = "0" %}
               {% for image in project.images %}
@@ -62,8 +62,7 @@
                        y="0"
                        width="1"
                        height="0.8" />
-                {% endif %}
-                {% if forloop.last %}
+                {% elseif forloop.last %}
                 <animateTransform attributeName="transform"
                                   attributeType="XML"
                                   type="translate"
