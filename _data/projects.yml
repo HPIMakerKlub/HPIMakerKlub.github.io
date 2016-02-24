@@ -1,3 +1,5 @@
+# add your projects to the top
+
 - title: LED-Table
   description: Auf LED-Tischen kann man Spiele spielen, Bilder anzeigen und Programmieren lernen.
   images: 
@@ -5,12 +7,18 @@
   - ledtable/LEDTable2.jpg
   - ledtable/LEDTable3.jpg
   - ledtable/LEDTable4.jpg
-  url: https://github.com/niccokunzmann/ledtable
+  url: https://github.com/niccokunzmann/ledtable#ledtable
 
-- title: Bandraum-klingel
+- title: Bandraum-Klingel
   description: Durch Lichtsignale erkennt man, wenn andere vor der Tür stehen.
   images: 
   - hpibandraumklingel/1.jpg
   - hpibandraumklingel/2.jpg
   - hpibandraumklingel/3.jpg
   url: https://github.com/hpibandraum/ring
+  
+- title: Vogelhaus
+  description: Ein Vogelhaus mit Webseite, mit dem man Vögel aufnehmen kann.
+  images: 
+  - vogelhaus/picture.jpg
+  url: https://github.com/niccokunzmann/vogelhaus#vogelhaus
