@@ -1,5 +1,6 @@
 ---
 ---
+{% assign configration = site.data.configuration %}
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -102,7 +103,7 @@
         {% for member in site.data.members %}
           <a href="{{ member.link|e }}">
             <div class="member">
-              <img class="image" src="images/members/{{ member.image|e }}"  />
+              <img class="image" src="images/members/{% if member.image %}{{ member.image|e }}{% else %}{{ site.data.configuration["default-member-picture"] }}{% endif %}"  />
               <div class="name">
                 {{ member.name|e }}
               </div>
