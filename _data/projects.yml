@@ -1,5 +1,28 @@
 # add your projects to the top
 
+
+- title: ANNAX LED Panel
+  description: Auf den reverse-engineerten Panels von der Bahn wird Laufschrift angezeigt.
+  images: 
+  - ledpanel/led_panel1_small.jpg
+  url: https://github.com/HPIMakerKlub/LED_Panel
+
+- title: Stricken
+  description: Zwei KH-910 Strickmaschinen werden mit der AYAB-Software und Arduino angesteuert.
+  images: 
+  - knitting/kerze_1.jpg
+  - knitting/kerze_2.jpg
+  - knitting/kerze_3.jpg
+  - knitting/kerze_4.jpg
+  - knitting/kerze_5.jpg
+  url: https://github.com/HPIMakerKlub/knitting
+
+- title: Glockenspiele
+  description: Aus Kupferstäben gemachte Klingel und Glockenspiele.
+  images: 
+  - glockenspiel/glockenspiel1.jpg
+  url: "#"
+
 - title: Door Bell
   description: Der MakerKlubraum hat eine Klingel.
   images: 
