@@ -1,5 +1,5 @@
 Bilder
 ======
 
-Die Standartlizenz ist `CCby HPI Maker Klub`. 
-Muss eine andere verwendet werden, steht sie in einer Datei mit dem selben Namen wie das Bild mit .LICENSE am Ende.
+Die Lizenz siehe andere Ordner im Ordner LICENSE.
+Bitte unbedingt eine LICENSE-Datei erstellen, z.B. eine andere kopieren und den Namen einfügen.
