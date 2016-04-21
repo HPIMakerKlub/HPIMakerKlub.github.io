@@ -4,8 +4,9 @@
 - title: ANNAX LED Panel
   description: Auf den reverse-engineerten Panels von der Bahn werden Tweets angezeigt.
   images: 
-  - ledpanel/led_panel1_small.jpg
   - ledpanel/led_panel2_small.jpg
+  - ledpanel/led_panel1_small.jpg
+  - ledpanel/led_panel_hpi.jpg
   url: https://github.com/HPIMakerKlub/LED_Panel
 
 - title: Stricken
