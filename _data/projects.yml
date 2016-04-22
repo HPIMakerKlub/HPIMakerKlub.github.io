@@ -1,13 +1,20 @@
 # add your projects to the top
 
 
+- title: Sensebox
+  description: Die Sensebox ist eine Arduino-Wetterstation mit Webanbindung.
+  images: 
+  - sensebox/statistics.png
+  - sensebox/auf_dem_bett.jpg
+  url: https://github.com/HPIMakerKlub/sensebox#sensebox
+
 - title: ANNAX LED Panel
   description: Auf den reverse-engineerten Panels von der Bahn werden Tweets angezeigt.
   images: 
   - ledpanel/led_panel2_small.jpg
   - ledpanel/led_panel1_small.jpg
   - ledpanel/led_panel_hpi.jpg
-  url: https://github.com/HPIMakerKlub/LED_Panel
+  url: https://github.com/HPIMakerKlub/LED_Panel#led_panel
 
 - title: Stricken
   description: Zwei KH-910 Strickmaschinen werden mit der AYAB-Software und Arduino angesteuert.
