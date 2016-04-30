@@ -1,6 +1,12 @@
 # add your projects to the top
 
 
+- title: Wordclock
+  description: Die Wordclock ist lasergeschnitten und kann Uhrzeiten anzeigen.
+  images: 
+  - wordclock/wordclock_hinten_klein.jpg
+  url: https://github.com/HPIMakerKlub/Wordclock
+
 - title: Sensebox
   description: Die Sensebox ist eine Arduino-Wetterstation mit Webanbindung.
   images: 
