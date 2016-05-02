@@ -42,6 +42,7 @@
 - title: Door Bell
   description: Der MakerKlubraum hat eine Klingel.
   images: 
+  - doorbell/photo_vertical.jpg
   url: https://github.com/HPIMakerKlub/doorbell
 
 - title: LED-Table
