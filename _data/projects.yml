@@ -1,5 +1,11 @@
 # add your projects to the top
 
+- title: Sandkasten
+  description: Der Sandkasten zeigt Berge, Täler und Gewässer, mit Kinect und Projektor.
+  images: 
+  - sandbox/sandbox-1.jpg
+  - sandbox/sandbox-2.jpg
+  url: http://hpimakerklub.github.io/vrsandbox/
 
 - title: Wordclock
   description: Die Wordclock ist lasergeschnitten und kann Uhrzeiten anzeigen.
