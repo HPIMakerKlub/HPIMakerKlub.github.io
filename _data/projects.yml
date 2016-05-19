@@ -13,6 +13,12 @@
   - wordclock/wordclock_hinten_klein.jpg
   url: https://github.com/HPIMakerKlub/Wordclock
 
+- title: Hackshibition
+  description: Der MakerKlub, CoderDojo und die OpenTechSchool hatten einen Stand auf der Mozilla Hackshibition.
+  images: 
+  - hackshibition/stand.jpg
+  url: https://www.eventbrite.com/e/mozilla-berlin-hackshibition-tickets-24635122314
+
 - title: Sensebox
   description: Die Sensebox ist eine Arduino-Wetterstation mit Webanbindung.
   images: 
