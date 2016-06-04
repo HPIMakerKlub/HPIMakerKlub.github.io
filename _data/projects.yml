@@ -1,5 +1,12 @@
 # add your projects to the top
 
+
+- title: Notenbox
+  description: Eine Lasercutter-Vorlage für eine Notenbox fürs Regal
+  images: 
+  - notenbox/mit-cello.png
+  url: https://github.com/HPIMakerKlub/notenBox
+
 - title: Sandkasten
   description: Der Sandkasten zeigt Berge, Täler und Gewässer, mit Kinect und Projektor.
   images: 
