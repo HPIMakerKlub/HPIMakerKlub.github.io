@@ -1,5 +1,12 @@
 # add your projects to the top
 
+- title: Fotobox
+  description: The Fotobox's integrated HQ reflex camera controlled by a Raspberry Pi takes great pictures at your event, prints and uploads them.
+  images: 
+  - fotobox/20160719-IMG_9431.jpg
+  - fotobox/20160719-IMG_9428.jpg
+  - fotobox/20160719-IMG_9424.jpg
+  url: https://fotobox.rootz.one/
 
 - title: Notenbox
   description: Eine Lasercutter-Vorlage für eine Notenbox fürs Regal
