@@ -1,6 +1,12 @@
 # add your projects to the top
 # Fotos should be 600x480px
 
+- title: Artnet
+  description: Mit der Artnet-Library und der Software können LEDs im Raum veteilt über WLAN zur Musik synchronisiert werden.
+  images: 
+  - artnet/DSC_4304_v2.jpg
+  url: 
+
 - title: Fotobox
   description: The Fotobox's integrated HQ reflex camera controlled by a Raspberry Pi takes great pictures at your event, prints and uploads them.
   images: 
