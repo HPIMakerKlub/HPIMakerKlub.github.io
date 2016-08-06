@@ -1,4 +1,5 @@
 # add your projects to the top
+# Fotos should be 600x480px
 
 - title: Fotobox
   description: The Fotobox's integrated HQ reflex camera controlled by a Raspberry Pi takes great pictures at your event, prints and uploads them.
