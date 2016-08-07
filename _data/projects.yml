@@ -1,6 +1,13 @@
 # add your projects to the top
 # Fotos should be 600x480px
 
+- title: Cyberblaster
+  description: Because light isn't just light.
+  images:
+  - cyberblaster/photo357857809430327000.jpg
+  - cyberblaster/photo_2016-08-07_10-46-13.jpg
+  url: https://github.com/HPIMakerKlub/Cyberblaster/#cyberblaster
+
 - title: Artnet
   description: Mit der Artnet-Library und der Software können LEDs im Raum veteilt über WLAN zur Musik synchronisiert werden.
   images: 
