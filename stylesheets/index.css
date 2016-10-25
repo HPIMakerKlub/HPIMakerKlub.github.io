@@ -139,3 +139,7 @@ body {
 .footer .logo .image {
   height: 60px;
 }
+
+.kontakt a {
+   color: rgb(177, 7, 58);
+}
