@@ -1,6 +1,15 @@
 # add your projects to the top
 # Fotos should be 600x480px
 
+- title: Lötworkshop
+  description: Wir löten einen Wechselblinker.
+  images:
+  - loetworkshop/zange.jpg
+  - loetworkshop/weit-weg.jpg
+  - loetworkshop/dran.jpg
+  url: https://github.com/HPIMakerKlub/loetworkshop#l%C3%B6tworkshop
+
+
 - title: Cyberblaster
   description: Because light isn't just light.
   images:
