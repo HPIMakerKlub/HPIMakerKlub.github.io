@@ -93,26 +93,6 @@
         {% endfor %}
         </div>
       </div>
-      <div class="section">
-        <a class="anchor" name="Mitglieder"></a>
-        <a href="#Mitglieder">
-          <div class="heading">
-            Mitglieder
-          </div>
-        </a>
-        <div class="list">
-        {% for member in site.data.members %}
-          <a href="{{ member.link|e }}">
-            <div class="member">
-              <img class="image" src="images/members/{% if member.image %}{{ member.image|e }}{% else %}{{ site.data.configuration["default-member-picture"] }}{% endif %}"  />
-              <div class="name">
-                {{ member.name|e }}
-              </div>
-            </div>
-          </a>
-        {% endfor %}
-        </div>
-      </div>
       <div class="section kontakt">
         <a class="anchor" name="Kontakt"></a>
         <a href="#Kontakt">
@@ -120,36 +100,26 @@
             Kontakt
           </div>
         </a>
-        <a href="http://www.openstreetmap.org/#map=19/52.39207/13.12419&layers=N">
-          <img src="images/map.svg" class="map" />
-        </a>
-        <ul class="features grid-whole padded equalize">
-          <div class="grid-third m-grid-half s-grid-whole padded">
-            Hasso-Plattner-Institut, Haus&nbsp;D<br/>
-            (im Workshop im Keller)<br/>
+        <div class="grid-half m-grid-whole s-grid-whole">
+          <a href="http://www.openstreetmap.org/#map=19/52.39207/13.12419&layers=N">
+            <img src="images/map.svg" class="map" />
+          </a>
+        </div>
+        <div class="features grid-half m-grid-whole s-grid-whole padded">
+          <div class="grid-whole">
+            Hasso-Plattner-Institut, Haus-D<br/>
             August-Bebel-Str. 88<br/>
             14482 Potsdam
-          </div>
-          <div class="grid-third m-grid-half s-grid-whole padded">
-            Wir machen regelmäßige Treffen und Workshops:
-            <a href="https://makerklub.quelltext.eu/kalender.ics">ICS-Kalender</a> oder
-            <a href="https://makerklub.quelltext.eu/kalender/">WebDav-Kalender</a> abbonieren.
-          </div>
-          <div class="grid-third m-grid-half s-grid-whole padded">
-            Um mit uns Kontakt aufzunehmen,
-            <a href="https://telegram.me/joinchat/BPddyABJ9f9mJPD6q9FX8g">
-            tritt der Telegram&nbsp;Gruppe bei</a> oder schreibe eine Mail an
-            den Verteiler klub-maker&nbsp;[&auml;t]&nbsp;hpi.de.
+            <br/><br/><br/>
+            Um mit uns Kontakt aufzunehmen,<br/><br/>
+            schreib dem ganzen Klub unter klub-maker(at)hpi.de<br/>
+            oder dem Klubsprecher unter klub-maker-sprecher(at)hpi.de
+            <br/><br/><br/><br/>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="logo">
-        <a href="/">
-          <img class="image" src="logo/HPIMakerKlubLogo.svg" />
-        </a>
-      </div>
+    <div class="footer  grid-whole">
     </div>
   </body>
 </html>
