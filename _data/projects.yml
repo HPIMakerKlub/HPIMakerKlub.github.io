@@ -1,6 +1,12 @@
 # add your projects to the top
 # Fotos should be 600x480px
 
+- title: Lovebox
+  description: Homemade christmas present for Lisa's mom to send her motivating messages each day.
+  images:
+  - lovebox/demo_lovebox.gif
+  url: https://github.com/julisa99/Lovebox#readme
+
 - title: Lötworkshop
   description: Wir löten einen Wechselblinker.
   images:
@@ -8,7 +14,6 @@
   - loetworkshop/weit-weg.jpg
   - loetworkshop/dran.jpg
   url: https://github.com/HPIMakerKlub/loetworkshop#l%C3%B6tworkshop
-
 
 - title: Cyberblaster
   description: Because light isn't just light.
